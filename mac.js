@@ -1,4 +1,4 @@
-
+// memory cost
 const memory8GB = document.getElementById('memory1');
 const memory16GB = document.getElementById('memory2');
 const memoryCost = document.getElementById('memory-cost');
@@ -16,7 +16,7 @@ memory16GB.addEventListener('click', function(){
 
 })
 
-
+// storage cost
 const storage256GB = document.getElementById('storage1');
 const storage512GB = document.getElementById('storage2');
 const storage1TB = document.getElementById('storage3');
@@ -35,7 +35,7 @@ storage1TB.addEventListener('click', function(){
     getTotalAmount();
 });
 
-
+// delevery cost
 const freeDelivery = document.getElementById('delivery1');
 const primeDelivery = document.getElementById('delivery2');
 const deliveryCost = document.getElementById('delivery-cost');
@@ -49,6 +49,7 @@ primeDelivery.addEventListener('click', function(){
     getTotalAmount();
 });
 
+// total price
 function getTotalAmount(){
     const bestPriceText = document.getElementById('best-price').innerText;
     const bestPrice = parseInt(bestPriceText);
@@ -64,7 +65,7 @@ function getTotalAmount(){
 
 };
 
-
+// pomocode
 
 const promoCode = document.getElementById('promocode');
 
